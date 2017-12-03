@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/id_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/id_hue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="色调"
+        android:layout_below="@+id/id_image"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbarHue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_hue"/>
+
+    <TextView
+        android:id="@+id/id_saturation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="饱和度"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/seekbarHue"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbarSaturation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_saturation"/>
+
+    <TextView
+        android:id="@+id/id_lum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="亮度"
+        android:layout_below="@+id/seekbarSaturation"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbarLum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_lum"/>
+
+</RelativeLayout>
